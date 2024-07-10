@@ -31,5 +31,8 @@ $ python model.py --validation --file_name [filename] --model_path BBB.pkl
 ```
 Note: For the validation step, prepare a .csv file containing SMILES with bioclass (0 or 1) (e.g., valid_set.csv)
 
+**Out Put:**
+
+Our model generates output in binary value (1 or 0), where 1 indicates compound to be permeable, while 0 indicates non-permeable.
  
 **Please ensure that all the necessary files (BBB.pkl, data_preprocessing.py, scaler, features.txt, inputfile.csv) are kept in the working directory.**
