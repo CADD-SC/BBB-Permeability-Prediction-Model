@@ -3,7 +3,7 @@ Machine learning-based prediction model for blood-brain barrier Permeability pre
 
 ## Introduction: ## 
 
-Welcome to our repository, here we provide machine learning model to efficiently predict the blood-brain barrier permeability of target drug compounds in early stage drug discovery process.
+Welcome to our repository, here we provide machine learning model to efficiently predict the blood-brain barrier (BBB) permeability of target drug compounds in early stage drug discovery process
 
 ## Dependencies ##
 
@@ -33,6 +33,6 @@ Note: For the validation step, prepare a .csv file containing SMILES with biocla
 
 **OutPut:**
 
-Our model generates output in binary value (1 or 0), where 1 indicates compound to be permeable, while 0 indicates non-permeable.
+Our model generates output in binary value (1 or 0), where 1 indicates compound to be permeable, while 0 indicates non-permeable
  
-**Please ensure that all the necessary files (BBB.pkl, data_preprocessing.py, scaler, features.txt, input_file.csv, model.py) are kept in the working directory.**
+**Please ensure that all the necessary files (BBB.pkl, data_preprocessing.py, scaler, features.txt, input_file.csv, model.py) are kept in the working directory**
