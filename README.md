@@ -1,7 +1,7 @@
 # Blood-Brain-Barrier-Permeablity-Prediction-Model
 Machine learning-based prediction model for blood-brain barrier permeability prediction of early stage drug screening
 
-## Introduction: ## 
+## Introduction ## 
 
 Welcome to our repository, here we provide machine learning model to efficiently predict the blood-brain barrier (BBB) permeability of target drug compounds in early stage drug discovery process. BBB is a critical physiological barrier that protects the central nervous system (CNS) from potentially harmful substances while allowing essential nutrients to pass through. Accurate prediction of a compound's ability to cross the BBB is essential in the development of CNS-targeting drugs. 
 
