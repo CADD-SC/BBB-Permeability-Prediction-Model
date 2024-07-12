@@ -1,4 +1,4 @@
-# Blood-Brain-Barrier-Permeablity-Prediction-Model
+# Blood-Brain-Barrier-Permeability-Prediction-Model
 Machine learning-based prediction model for blood-brain barrier permeability prediction of early stage drug screening
 
 ## Introduction ## 
