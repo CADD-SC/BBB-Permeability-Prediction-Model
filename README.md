@@ -1,9 +1,16 @@
-# Blood-Brain-Barrier-Permeability-Prediction-Model
-Machine learning-based prediction model for blood-brain barrier Permeability prediction of early stage drug screening
+# Blood-Brain-Barrier-Permeablity-Prediction-Model
+Machine learning-based prediction model for blood-brain barrier permeability prediction of early stage drug screening
 
 ## Introduction: ## 
 
-Welcome to our repository, here we provide machine learning model to efficiently predict the blood-brain barrier (BBB) permeability of target drug compounds in early stage drug discovery process
+Welcome to our repository, here we provide machine learning model to efficiently predict the blood-brain barrier (BBB) permeability of target drug compounds in early stage drug discovery process. BBB is a critical physiological barrier that protects the central nervous system (CNS) from potentially harmful substances while allowing essential nutrients to pass through. Accurate prediction of a compound's ability to cross the BBB is essential in the development of CNS-targeting drugs. 
+
+## Classification criteria
+The model uses a logBB threshold:
+
+</strong>If <em>logBB</em> ≥ -1, the compound is <strong>BBB Permeable</strong> and belongs to class 1. If <em>logBB</em> < -1, it is <strong>Not BBB Permeable</strong> and belongs to class 0.</strong>
+
+
 
 ## Dependencies ##
 
@@ -22,14 +29,14 @@ Welcome to our repository, here we provide machine learning model to efficiently
 ```
 $ python model.py --prediction --file_name [filename] --model_path BBB.pkl
 ```
-Note: For the prediction step, prepare a .csv file containing SMILES without bioclass (e.g., test_set.csv)
+<strong>Note:</strong> For the prediction step, prepare a .csv file containing SMILES without bioclass (e.g., test_set.csv)
 
 **To run the validation:**
 
 ```
 $ python model.py --validation --file_name [filename] --model_path BBB.pkl
 ```
-Note: For the validation step, prepare a .csv file containing SMILES with bioclass (0 or 1) (e.g., valid_set.csv)
+<strong>Note:</strong> For the validation step, prepare a .csv file containing SMILES with bioclass (0 or 1) (e.g., valid_set.csv)
 
 **OutPut:**
 
