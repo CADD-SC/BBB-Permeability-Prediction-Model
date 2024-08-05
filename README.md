@@ -10,7 +10,7 @@ Welcome to our repository, here we provide machine learning model to efficiently
 
 The model classifies a compound based on its logBB value. If the logBB value is greater than or equal to -1, the compound is classified as class 1; otherwise, it is classified as class 0.
 
-Additionally, the model provides the probability that each compound belongs to its respective class. A higher logBB probability value indicates better permeability of the compound.
+Additionally, the model provides the probability that each compound belongs to its respective class. If classified as class 1, the compound is identified as a "BBB permeable", along with the associated probability.
 
 
 ## Dependencies ##
@@ -43,6 +43,6 @@ $ python model.py --validation --file_name [filename]
 
 Our model generates output in binary value (1 or 0), where 1 indicates compound to be permeable, while 0 indicates non-permeable.
 
-Additionally, the model provides the probability that each compound belongs to its respective class. A higher logBB probability value indicates better permeability of the compound.
+Additionally, the model provides the probability that each compound belongs to its respective class. If classified as class 1, the compound is identified as a "BBB permeable", along with the associated probability..
  
 **Please ensure that all the necessary files (BBB.pkl, data_preprocessing.py, scaler, features.txt, input_file.csv, model.py) are kept in the working directory**
