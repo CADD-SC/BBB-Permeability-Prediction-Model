@@ -6,10 +6,11 @@ Machine learning-based prediction model for blood-brain barrier permeability pre
 Welcome to our repository, here we provide machine learning model to efficiently predict the blood-brain barrier (BBB) permeability of target drug compounds in early stage drug discovery process. BBB is a critical physiological barrier that protects the central nervous system (CNS) from potentially harmful substances while allowing essential nutrients to pass through. Accurate prediction of a compound's ability to cross the BBB is essential in the development of CNS-targeting drugs. 
 
 ## Classification criteria
-The model uses a logBB threshold:
+<strong>The model uses a logBB threshold:</strong>
 
-</strong>If <em>logBB</em> ≥ -1, the compound is <strong>BBB Permeable</strong> and belongs to class 1. If <em>logBB</em> < -1, it is <strong>Not BBB Permeable</strong> and belongs to class 0.</strong>
+The model classifies a compound based on its logBB value. If the logBB value is greater than or equal to -1, the compound is classified as class 1; otherwise, it is classified as class 0.
 
+Additionally, the model provides the probability that each compound belongs to its respective class. A higher logBB probability value indicates better permeability of the compound.
 
 
 ## Dependencies ##
@@ -27,19 +28,21 @@ The model uses a logBB threshold:
 **To run the prediction:**
 
 ```
-$ python model.py --prediction --file_name [filename] --model_path BBB.pkl
+$ python model.py --prediction --file_name [filename] 
 ```
 <strong>Note:</strong> For the prediction step, prepare a .csv file containing SMILES without bioclass (e.g., test_set.csv)
 
 **To run the validation:**
 
 ```
-$ python model.py --validation --file_name [filename] --model_path BBB.pkl
+$ python model.py --validation --file_name [filename] 
 ```
 <strong>Note:</strong> For the validation step, prepare a .csv file containing SMILES with bioclass (0 or 1) (e.g., valid_set.csv)
 
 **OutPut:**
 
-Our model generates output in binary value (1 or 0), where 1 indicates compound to be permeable, while 0 indicates non-permeable
+Our model generates output in binary value (1 or 0), where 1 indicates compound to be permeable, while 0 indicates non-permeable.
+
+Additionally, the model provides the probability that each compound belongs to its respective class. A higher logBB probability value indicates better permeability of the compound.
  
 **Please ensure that all the necessary files (BBB.pkl, data_preprocessing.py, scaler, features.txt, input_file.csv, model.py) are kept in the working directory**
